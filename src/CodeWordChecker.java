@@ -5,16 +5,16 @@ public class CodeWordChecker implements StringChecker {
     private String notOccur;
     private String str;
 
-    public CodeWordChecker(int min, int max, String str) {
+    public CodeWordChecker(int min, int max, String notOccur) {
         this.min = min;
         this.max = max;
-        this.str = str;
+        this.notOccur = notOccur;
     }
 
-    public CodeWordChecker(String str) {
+    public CodeWordChecker(String notOccur) {
         this.min = 6;
         this.max = 20;
-        this.str = str;
+        this.notOccur = notOccur;
     }
 
     public boolean isValid(String str) {
